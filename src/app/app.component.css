@@ -1,0 +1,9 @@
+.container{
+    max-width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 20px;
+    
+}

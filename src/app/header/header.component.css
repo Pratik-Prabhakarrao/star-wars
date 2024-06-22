@@ -1,0 +1,24 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #239B77;
+    color: #fff;
+}
+
+.title{
+    font-size: 3rem ;
+    padding: 20px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+.description{
+    font-size: 0.8rem;
+    align-content: baseline;
+    color: #fff;
+    padding-bottom: 0;
+    margin-right: 4rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.05rem;
+    align-items: flex-end;    
+}

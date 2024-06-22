@@ -1,0 +1,56 @@
+/* styles.css */
+
+
+  .container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .profile {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .profile-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+  }
+  
+  .details {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .details section {
+    margin-bottom: 20px;
+  }
+  
+  .details h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .details .film-details, .details .vehicle-details, .details .starship-details {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .details p {
+    margin: 5px 0;
+  }
+  

@@ -1,0 +1,8 @@
+<div>
+    <app-character-filter (filterChange)="filterCharacters($event)"></app-character-filter>
+    <ul>
+      <li *ngFor="let character of filteredCharacters">
+        <a [routerLink]="['/characters', character.url.split('/')[5]]">{{ character.name }}</a>
+      </li>
+    </ul>
+  </div>

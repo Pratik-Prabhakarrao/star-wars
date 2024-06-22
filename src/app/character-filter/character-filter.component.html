@@ -1,0 +1,19 @@
+<!-- src/app/components/character-filter/character-filter.component.html -->
+<div>
+    <label>Movie:</label>
+    <select [(ngModel)]="filterCriteria.movie">
+      <option *ngFor="let movie of movies" [value]="movie.url">{{ movie.title }}</option>
+    </select>
+  
+    <label>Species:</label>
+    <select [(ngModel)]="filterCriteria.species">
+      <option *ngFor="let specie of species" [value]="specie.url">{{ specie.name }}</option>
+    </select>
+  
+    <label>Birth Year Range:</label>
+    <input type="number" [(ngModel)]="filterCriteria.birthYearRange[0]" placeholder="From">
+    <input type="number" [(ngModel)]="filterCriteria.birthYearRange[1]" placeholder="To">
+  
+    <button (click)="applyFilter()">Apply Filter</button>
+  </div>
+  

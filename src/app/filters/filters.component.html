@@ -1,0 +1,43 @@
+<aside class="filters">
+    <h2>FILTERS</h2>
+    <div class="filter-group">
+      <label for="movie"></label>
+      <select id="movie" [(ngModel)]="filterCriteria.movie">
+        <option value="" *ngFor="let movie of movies" [value]="movie.url">{{ movie.title }}>Movie Name</option>
+        <!-- Movie options will be dynamically added here -->
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="species"></label>
+      <select id="species" [(ngModel)]="filterCriteria.species">
+        <option value="" *ngFor="let specie of species" [value]="specie.url">{{ specie.name }}>Species</option>
+        <!-- Species options will be dynamically added here -->
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="vehicle"></label>
+      <select id="vehicle" [(ngModel)]="filterCriteria.vehicle">
+        <option value="" *ngFor="let vehicle of vehicles" [value]="vehicle.url">{{ vehicle.name }}>Vehicle</option>
+        <!-- Vehicle options will be dynamically added here -->
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="starships"></label>
+      <select id="starships" [(ngModel)]="filterCriteria.starships">
+        <option value="" *ngFor="let starship of starships" [value]="starship.url">{{ starship.name }}>Star Ship</option>
+        <!-- Star Ships options will be dynamically added here -->
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="birth-year">Birth Year</label>
+      <div>
+        <input type="radio" id="all" name="birth-year" value="all" checked>
+        <label for="all">ALL</label>
+      </div>
+      <div>
+        <input type="radio" id="bby20" name="birth-year" value="bby20">
+        <label for="bby20">BBY20</label>
+      </div>
+    </div>
+    <button id="search-button">SEARCH</button>
+  </aside>
